@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 import uvicorn
 from CoolProp.CoolProp import PhaseSI, PropsSI, get_global_param_string
-
+r = PropsSI('T','P',P,'Q',Q,'Water')
+print(f"{r}")
 app = FastAPI()
 
 
